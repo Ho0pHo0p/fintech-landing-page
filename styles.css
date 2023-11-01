@@ -1,0 +1,57 @@
+:root {
+  font-family: 'Poppins', sans-serif;
+  font-size: 17px;
+  box-sizing: border-box;
+  color: #4D4D4D;
+}
+
+h1 {
+  font-size: 1.5rem;
+  color: black;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #4D4D4D;
+}
+
+h3 {
+  color: #4D4D4D;
+}
+
+h4 {
+  color: #4D4D4D;
+}
+
+h5 {
+  color: #4D4D4D;
+}
+
+p {
+  font-size: 1rem;
+  color: gray;
+}
+
+li {
+  list-style: none;
+  color: #4D4D4D;
+}
+
+ul {
+  padding: 0;
+}
+
+button {
+  background-color: #4CAF4F;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  border: none;
+  padding: 12px 17px;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+body {
+
+}
