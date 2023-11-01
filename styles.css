@@ -11,7 +11,7 @@ h1 {
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 500;
   color: #4D4D4D;
 }
@@ -42,6 +42,15 @@ ul {
   padding: 0;
 }
 
+a {
+  color: #4D4D4D;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #4CAF4F;
+}
+
 button {
   background-color: #4CAF4F;
   color: white;
@@ -50,8 +59,67 @@ button {
   padding: 12px 17px;
   font-weight: 500;
   font-size: 1rem;
+  border-radius: 10px;
 }
 
 body {
+  display: flex;
+  flex-flow: column;
+  background-color:  #F5F7FA;;
+}
+
+/* Header */
+
+header {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  align-items: first baseline;
+  gap: 10px;
+  padding: 10px 32px;
+  background-color:  #F5F7FA;;
+}
+
+nav {
+  grid-column: 2;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+header button {
+  width: 100px;
+  height: 50px;
+  justify-self: flex-end;
+}
+
+.green {
+  color:#4CAF4F; 
+}
+
+/* Hero */
+
+#hero {
+  padding: 32px;
+  display: flex;
+  flex-flow: column;
+  background-color: #F5F7FA;
 
 }
+
+#hero-1 img {
+  width: 40%;
+  object-fit: contain;
+}
+
+#hero-1 {
+  display: flex;
+  gap: 50px;
+  justify-content: space-evenly;
+}
+
+#hero-1 div{
+  width: 40%;
+}
+
