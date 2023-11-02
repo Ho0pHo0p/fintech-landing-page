@@ -4,6 +4,9 @@
   box-sizing: border-box;
   color: #4D4D4D;
 }
+h1, h2, h3, h4, h5, h6 {
+  margin: 0px;
+}
 
 h1 {
   font-size: 1.5rem;
@@ -17,6 +20,8 @@ h2 {
 }
 
 h3 {
+  font-size: 2rem;
+  font-weight: 400;
   color: #4D4D4D;
 }
 
@@ -101,7 +106,7 @@ header button {
 /* Hero */
 
 #hero {
-  padding: 32px;
+  padding: 48px 32px;
   display: flex;
   flex-flow: column;
   background-color: #F5F7FA;
@@ -123,3 +128,91 @@ header button {
   width: 40%;
 }
 
+/* info -- Clients and Manage Community */
+
+.info {
+  background-color: white;
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+  line-height: 1;
+  padding: 32px;
+  align-items: center;
+}
+
+.info h3 {
+  max-width: 40%;
+}
+
+.info ul {
+  margin-top: 48px;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.info .member-info {
+  display: flex;
+  gap: 100px;
+  justify-content: space-evenly;
+}
+
+.member-info div {
+  max-width: 300px;
+}
+
+/* Cost Section */
+
+#cost {
+  background-color: white;
+  padding: 32px;
+  display: flex;
+}
+
+#cost div {
+  max-width: 60%;
+}
+
+#cost img {
+  object-fit: contain;
+}
+
+/* Stats */ 
+
+#stats {
+  padding: 48px 6vw ;
+  display:flex;
+  gap: 32px;
+  justify-content: space-evenly;
+}
+
+#stats h3 {
+  max-width:70%;
+}
+
+#stats .numbers {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.numbers > div {
+  min-width: 200px;
+}
+
+/* How-to */ 
+
+#how-to {
+  background-color: white;
+  padding: 32px;
+  display: flex;
+  justify-content: space-around;
+}
+
+#how-to div {
+  max-width: 700px;
+}
+
+#how-to img {
+  object-fit: contain;
+}
