@@ -53,7 +53,8 @@ a {
 }
 
 a:hover {
-  color: #4CAF4F;
+  color: #388E3B;
+  cursor: pointer;
 }
 
 button {
@@ -65,6 +66,11 @@ button {
   font-weight: 500;
   font-size: 1rem;
   border-radius: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #388E3B;
 }
 
 body {
@@ -151,6 +157,16 @@ header button {
   width: 100%;
 }
 
+.info li {
+  font-size: 3rem;
+}
+
+.info img {
+  width: 200px;
+  height: 120px;
+  object-fit: contain;
+}
+
 .info .member-info {
   display: flex;
   gap: 100px;
@@ -159,6 +175,9 @@ header button {
 
 .member-info div {
   max-width: 300px;
+  padding: 17px;
+  box-shadow: 4px 4px 10px gainsboro;
+
 }
 
 /* Cost Section */
@@ -198,6 +217,17 @@ header button {
 
 .numbers > div {
   min-width: 200px;
+  padding: 20px;
+}
+
+.numbers .block {
+  display: flex;
+  gap: 20px;
+}
+
+.block i {
+  font-size: 2rem;
+  color: #4CAF4F;
 }
 
 /* How-to */ 
@@ -216,3 +246,36 @@ header button {
 #how-to img {
   object-fit: contain;
 }
+
+/* Quote */
+
+#quote {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 32px;
+  max-width: 80%;
+  align-self: center;
+}
+
+#quote img {
+  width: 30%;
+  object-fit: cover;
+}
+
+#quote-photo {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#quote-photo p {
+  margin: 0px;
+}
+
+#quote-photo ul {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 2rem;
+}
+
