@@ -254,13 +254,14 @@ header button {
   justify-content: center;
   gap: 30px;
   padding: 32px;
-  max-width: 80%;
   align-self: center;
+  max-width: 80%;
 }
 
 #quote img {
   width: 30%;
   object-fit: cover;
+  border-radius: 20px;
 }
 
 #quote-photo {
@@ -279,3 +280,62 @@ header button {
   font-size: 2rem;
 }
 
+/*  caring */
+
+#caring {
+  background-color: white;
+  padding: 32px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.caring-text {
+  max-width: 80%;
+}
+
+.caring-cards {
+  display: flex;
+  gap: 20px;
+  max-width: 80%;
+}
+
+.caring-cards div {
+  background-color: #F5F7FA;
+  padding: 20px;
+  display: grid; 
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  justify-content: center;;
+  border-radius: 10px;
+}
+
+.caring-cards a { 
+  grid-column: 1;
+  grid-row: 2;
+  justify-self: center;
+  background-color: transparent;
+  color: #4CAF4F;
+}
+
+.caring-cards a:hover {
+  color: #388E3B;
+}
+
+/* demo */ 
+
+#demo {
+  padding: 32px;
+  align-self: center;
+  text-align: center;
+}
+
+#demo h2 {
+  padding: 28px;
+}
+
+footer {
+  background-color: #263238;
+}
