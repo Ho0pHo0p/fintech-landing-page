@@ -259,8 +259,8 @@ header button {
 }
 
 #quote img {
-  width: 30%;
-  object-fit: cover;
+  height: 200px;
+  object-fit: contain;
   border-radius: 20px;
 }
 
@@ -276,6 +276,7 @@ header button {
 
 #quote-photo ul {
   display: flex;
+  margin: 0px;
   justify-content: space-evenly;
   font-size: 2rem;
 }
@@ -336,6 +337,79 @@ header button {
   padding: 28px;
 }
 
+/* demo */
+
 footer {
   background-color: #263238;
+  padding: 32px 56px;
+  display: grid;
+  gap: 32px;
+  grid-template-columns: .25fr 1fr 2fr .25fr;
+}
+
+footer h5 {
+  font-size: 1.2rem;
+}
+
+.footer-left p, i {
+  color: white;
+}
+
+footer > .footer-left {
+  grid-column: 2;
+  display: flex;
+  flex-flow: column;
+}
+
+.footer-left > ul {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  justify-content: space-between;
+}
+
+.footer-left li {
+  color: white;
+}
+
+footer > .footer-right {
+  grid-column: 3;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.footer-right a {
+  color: white;
+}
+
+.footer-right h5 {
+  color: white;
+  margin: 5px 0px;
+}
+
+.footer-right ul {
+  line-height: 2;
+}
+
+.footer-right form {
+  padding: 10px;
+  margin: 10px 0px;
+  border-radius: 10px;
+  color: #4D4D4D;
+  background-color: white;
+}
+
+.footer-right input{
+  outline: none;
+  border: none;
+}
+
+.footer-right button {
+  background-color: transparent;
+  padding: 5px;
+}
+
+.footer-right i {
+  color: #4D4D4D;
 }
