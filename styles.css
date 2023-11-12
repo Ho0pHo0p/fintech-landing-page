@@ -76,8 +76,12 @@ button:hover {
 body {
   display: flex;
   flex-flow: column;
-  background-color:  #F5F7FA;;
-}
+  background-color:#F5F7FA;
+  border: none;
+  margin: 0px;
+} 
+
+
 
 /* Header */
 
@@ -87,7 +91,7 @@ header {
   align-items: first baseline;
   gap: 10px;
   padding: 10px 32px;
-  background-color:  #F5F7FA;;
+  background-color:  #F5F7FA;
 }
 
 nav {
@@ -97,6 +101,7 @@ nav {
 nav ul {
   display: flex;
   justify-content: space-between;
+  gap: 20px;
 }
 
 header button {
@@ -147,7 +152,7 @@ header button {
 }
 
 .info h3 {
-  max-width: 40%;
+  max-width: 50%;
 }
 
 .info ul {
@@ -169,12 +174,15 @@ header button {
 
 .info .member-info {
   display: flex;
-  gap: 100px;
+  flex-wrap:wrap;
+  gap: 50px;
   justify-content: space-evenly;
+  line-height: 1.3;
+  overflow-x: scroll;
 }
 
-.member-info div {
-  max-width: 300px;
+.member-info > div {
+  width: 300px;
   padding: 17px;
   box-shadow: 4px 4px 10px gainsboro;
 
@@ -186,6 +194,7 @@ header button {
   background-color: white;
   padding: 32px;
   display: flex;
+  
 }
 
 #cost div {
@@ -203,6 +212,7 @@ header button {
   display:flex;
   gap: 32px;
   justify-content: space-evenly;
+  background-color:  #F5F7FA;
 }
 
 #stats h3 {
@@ -255,7 +265,8 @@ header button {
   gap: 30px;
   padding: 32px;
   align-self: center;
-  max-width: 80%;
+  max-width: 700px;
+  background-color:  #F5F7FA;
 }
 
 #quote img {
@@ -331,6 +342,7 @@ header button {
   padding: 32px;
   align-self: center;
   text-align: center;
+  background-color:  #F5F7FA;
 }
 
 #demo h2 {
@@ -351,7 +363,11 @@ footer h5 {
   font-size: 1.2rem;
 }
 
-.footer-left p, i {
+.footer-left p {
+  color: white;
+}
+
+.footer-left i {
   color: white;
 }
 
@@ -412,4 +428,193 @@ footer > .footer-right {
 
 .footer-right i {
   color: #4D4D4D;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+  nav ul{
+    flex-direction: column;
+  }
+
+  #hero-1 {
+    flex-direction: column-reverse;
+  }
+
+  #hero-1 div {
+    width: 100%;
+  }
+
+  .info h3{
+    max-width: 90%;
+  }
+
+  .info p {
+    line-height: 1.5;
+  }
+
+  .info i {
+    font-size: 2rem;
+  }
+
+  .info .member-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  #cost {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #cost img {
+    width: 400px;
+  }
+
+  #cost div {
+    width: 100%;
+  }
+
+  #stats {
+    flex-direction: column;
+  }
+
+  #how-to {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #how-to img {
+    width: 200px;
+  }
+
+  #quote {
+    flex-direction: column;
+  }
+
+  #quote img {
+    display: none;
+  }
+
+  .caring-cards {
+    flex-direction: column;
+  }
+
+  footer {
+    grid-template-columns: 1fr 2fr;
+  }
+
+  footer > .footer-left {
+    grid-column: 1;
+    display: flex;
+    flex-flow: column;
+  }
+
+  footer > .footer-right {
+    flex-direction: column;
+    grid-column: 2;
+  }
+
+  .footer-right h5 {
+    cursor: pointer;
+  }
+
+  footer > .footer-right ul {
+    display: none;
+  }
+
+  .footer-right form {
+    padding: 10px;
+    margin: 10px 0px;
+    border-radius: 10px;
+    color: #4D4D4D;
+    background-color: white;
+  }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+  nav ul{
+    flex-direction: column;
+  }
+
+  .info h3 {
+    max-width: 90%;
+  }
+  
+  .info .member-info {
+    gap: 10px;
+  }
+
+  #cost {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #cost img {
+    width: 400px;
+  }
+
+  #cost div {
+    width: 100%;
+  }
+
+  #stats {
+    flex-direction: column;
+  }
+
+  #how-to {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #how-to img {
+    width: 200px;
+  }
+
+  #quote {
+    flex-direction: column;
+  }
+
+  #quote img {
+    display: none;
+  }
+
+  .caring-cards {
+    flex-direction: column;
+  }
+
+  footer {
+    grid-template-columns: 1fr 2fr;
+  }
+
+  footer > .footer-left {
+    grid-column: 1;
+    display: flex;
+    flex-flow: column;
+  }
+
+  footer > .footer-right {
+    flex-direction: column;
+    grid-column: 2;
+  }
+
+  .footer-right h5 {
+    cursor: pointer;
+  }
+
+  footer > .footer-right ul {
+    display: none;
+  }
+
+  .footer-right form {
+    padding: 10px;
+    margin: 10px 0px;
+    border-radius: 10px;
+    color: #4D4D4D;
+    background-color: white;
+  }
+
+  
 }
