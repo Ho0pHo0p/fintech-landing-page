@@ -79,6 +79,7 @@ body {
   background-color:#F5F7FA;
   border: none;
   margin: 0px;
+  width: fit-content;
 } 
 
 
@@ -194,7 +195,6 @@ header button {
   background-color: white;
   padding: 32px;
   display: flex;
-  
 }
 
 #cost div {
@@ -549,7 +549,7 @@ footer > .footer-right {
 
   #cost {
     flex-direction: column;
-    align-items: center;
+    text-align: center;
   }
 
   #cost img {
@@ -557,7 +557,6 @@ footer > .footer-right {
   }
 
   #cost div {
-    width: 100%;
   }
 
   #stats {
