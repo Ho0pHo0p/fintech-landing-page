@@ -723,7 +723,7 @@ footer > .footer-right {
   }
 
   .hidden {
-    display: block;
+    visibility: visible;
   }
 
 
