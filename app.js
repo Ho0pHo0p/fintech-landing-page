@@ -34,5 +34,6 @@ bars.addEventListener('click', menuDisplay)
 
 emailForm.addEventListener('submit', (e) => {
   e.preventDefault();
+  console.log('ukebcgkdefbhsdkufhdkufn')
   emailInput.value = ''
 })
