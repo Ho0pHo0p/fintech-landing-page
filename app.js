@@ -4,6 +4,9 @@ const bars = document.querySelector('#bars');
 const navbar = document.querySelector('#navbar');
 const menu = document.querySelector('#menu'
 );
+const emailForm = document.querySelector('#form'
+)
+const emailInput = document.querySelector('#email')
 
 
 const menuDisplay = (e) => {
@@ -29,3 +32,7 @@ const menuDisplay = (e) => {
 
 bars.addEventListener('click', menuDisplay)
 
+emailForm.addEventListener('submit', (e) => {
+  e.preventDefault();
+  emailInput.value = ''
+})
