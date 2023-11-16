@@ -4,6 +4,11 @@
   box-sizing: border-box;
   color: #4D4D4D;
 }
+
+.hidden {
+  visibility: hidden;
+}
+
 h1, h2, h3, h4, h5, h6 {
   margin: 0px;
 }
@@ -724,8 +729,8 @@ footer > .footer-right {
 
   .hidden {
     visibility: visible;
+    opacity: 1;
   }
-
 
   nav {
     grid-column: 2;
@@ -736,6 +741,8 @@ footer > .footer-right {
     top: 0px;
     background-color: transparent;
     padding:0px;
+    visibility: visible;
+    opacity: 1;
   }
 
   nav ul {
@@ -743,6 +750,8 @@ footer > .footer-right {
     flex-direction: row;
     justify-content: space-between;
     gap: 30px;
+    visibility: visible;
+    opacity: 1;
   }
   
 
