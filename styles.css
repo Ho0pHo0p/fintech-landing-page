@@ -121,9 +121,9 @@ nav {
   z-index: 1;
   font-size: 1.5rem;
   left: -10px;
-  top: -30px;
+  top: -100px;
   background-color: white;
-  padding: 90px 50px 10px 60px;
+  padding: 150px 50px 10px 60px;
   border-radius: 20px;
   opacity: 0;
   transition: visibility 0s, opacity .2s;
